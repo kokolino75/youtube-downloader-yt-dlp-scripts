@@ -12,9 +12,19 @@ This repository contains batch scripts designed for downloading video and audio 
 
 ## How to Use
 
-1. Clone or download this repository to your computer.
-2. Edit the batch files if needed. The output paths used (e.g., `G:\YOTUBE DOUNLOAD MOI`) are only examples. You can change them to any location that suits you.
-3. Run the desired `.bat` file by double-clicking on it. Follow the prompts to enter the required information, such as filename and video/audio URL.
+1. **Clone or Download the Repository**: Clone or download this repository to your computer using the following command:
+   ```
+   git clone https://github.com/kokolino75/youtube-downloader-yt-dlp-scripts.git
+   ```
+
+2. **Edit the Batch Files (Optional)**: The output paths used in the scripts (e.g., `G:\YOTUBE DOUNLOAD MOI`) are only examples. You can change them to any location that suits you. To do this:
+   - Open the `.bat` file using a text editor like Notepad.
+   - Modify the path after the `-o` option to specify where you want the downloaded files to be saved.
+
+3. **Run the Scripts**: Run the desired `.bat` file by double-clicking on it. The script will:
+   - Prompt you to enter a custom filename (default is provided).
+   - Prompt you to paste the YouTube video or audio URL.
+   - Download the content to the specified folder.
 
 ## Color Scheme
 
@@ -24,7 +34,22 @@ The scripts use a color scheme to enhance the user experience:
 - Success messages are displayed in blue.
 - Error messages are displayed in red.
 
-If you prefer different colors, you can modify the color codes in the batch files as desired.
+If you prefer different colors, you can modify the color codes in the batch files as desired. The color codes are set using the `color` command in the batch scripts.
+
+## Functions of the Scripts
+
+- **Video Downloader Script**: Downloads video content along with the audio in the best available quality.
+- **Audio Downloader Script**: Downloads only the audio track from a YouTube video, converting it to MP3 format with the highest quality setting (`--audio-quality 0`).
+
+## Editing Instructions
+
+- **Output Path**: You can change the output path in the script by editing the `-o` parameter to specify a different folder.
+- **Default Filename**: The default filename can also be changed in the script by modifying the variable that prompts the user.
+
+## Additional Resources
+
+- **yt-dlp Documentation**: For more detailed information about `yt-dlp` and its capabilities, please visit the official documentation:
+  [yt-dlp Documentation on GitHub](https://github.com/yt-dlp/yt-dlp#readme)
 
 ## Note
 
@@ -34,6 +59,7 @@ If you prefer different colors, you can modify the color codes in the batch file
 ## Disclaimer
 
 These scripts are provided "as is," without any warranty. Users are encouraged to use them responsibly and at their own discretion.
+
 
 
 
